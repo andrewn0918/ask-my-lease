@@ -1,7 +1,12 @@
 from pypdf import PdfReader
 reader = PdfReader("lease.pdf")
-#print(len(reader.pages), " pages found")
 
-for number, page in enumerate(reader.pages):
-    text = page.extract_text()
-    print(f"Page {number + 1}:\n{text}\n")
+def chunk_text(text, chunk_size=400):
+    words = text.split()
+    chunks = []
+    for i in range(0, len(words), chunk_size):
+        chunks.append(' '.join(words[i:i + chunk_size]))
+    return chunks
+
+
+print(chunk_text("one two three four five six seven", 3))
