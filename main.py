@@ -1,4 +1,6 @@
 from pypdf import PdfReader
+from store import get_collection, store_chunks
+
 reader = PdfReader("lease.pdf")
 
 def chunk_text(text, chunk_size=400):
@@ -16,7 +18,7 @@ for number, page in enumerate(reader.pages, start=1):
             "text": piece,
             "page_number": number
         })
-        
-print(chunk_text("one two three four five six seven", 3))
-print(len(chunks), "chunks")
-print(chunks[5])
+
+
+count = store_chunks(chunks)
+print(count, "chunks stored")
