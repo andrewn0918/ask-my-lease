@@ -8,5 +8,15 @@ def chunk_text(text, chunk_size=400):
         chunks.append(' '.join(words[i:i + chunk_size]))
     return chunks
 
-
+chunks = []
+for number, page in enumerate(reader.pages, start=1):
+    text = page.extract_text()
+    for piece in chunk_text(text):
+        chunks.append({
+            "text": piece,
+            "page_number": number
+        })
+        
 print(chunk_text("one two three four five six seven", 3))
+print(len(chunks), "chunks")
+print(chunks[5])
