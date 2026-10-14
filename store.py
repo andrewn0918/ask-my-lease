@@ -13,3 +13,18 @@ def store_chunks(chunks):
         documents = [chunk["text"] for chunk in chunks]
     )
     return collection.count()
+
+def search(question, n_results=3):
+    collection = get_collection()
+    results = collection.query(
+        query_texts=[question],
+        n_results=n_results
+    )
+    hits = []
+    #return data in similar format to chunks
+    for text, meta in zip(results['documents'][0], results['metadatas'][0]):
+        hits.append({
+            "text": text,
+            "page_number": meta["page_number"]
+        })
+    return hits
