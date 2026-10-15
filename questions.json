@@ -1,0 +1,7 @@
+[
+    {"question": "Can I have a pet?", "pages": [17,18]},
+    {"question": "Does the building have a pool?", "pages": []},
+    {"question": "How much is the security deposit?", "pages": []},
+    {"question": "When do I get my deposit back?", "pages": [12]},
+    {"question": "What happens if I pay my rent late?", "pages": [10]}
+]
