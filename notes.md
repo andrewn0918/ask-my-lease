@@ -6,3 +6,7 @@
 - "How much is the security deposit?"  returned not found --> valid (refusal case)
 - "When do I get my deposit back?" returned page 12 --> valid
 - "What happens if I pay rent late?" returned page 10 --> valid
+
+
+## Baseline (400-word chunks, no overlap, k=3)
+recall@3: 3/3 = 100% on 3 answerable questions (too few to trust)

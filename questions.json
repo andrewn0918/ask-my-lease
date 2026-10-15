@@ -1,7 +1,14 @@
 [
     {"question": "Can I have a pet?", "pages": [17,18]},
-    {"question": "Does the building have a pool?", "pages": []},
-    {"question": "How much is the security deposit?", "pages": []},
+    {"question": "Does the building have a pool?", "pages": [5,18,36]},
+    {"question": "How much is the security deposit?", "pages": [1,12,22,33,45,65,70,72]},
     {"question": "When do I get my deposit back?", "pages": [12]},
-    {"question": "What happens if I pay my rent late?", "pages": [10]}
+    {"question": "What happens if I pay my rent late?", "pages": [10]},
+    {"question": "How many days after the due date does rent count as late?", "pages": [2,22, 68, 70, 71]},
+    {"question": "Can I sublet my apartment for the summer?", "pages": [9, 58, 81]},
+    {"question": "What happens if I need to move out before the lease ends?", "pages": [2, 3, 9, 10, 11, 31]},
+    {"question": "Are there firefigthers at tustin cottages?", "pages": []},
+    {"question": "What are the quiet hours or noise rules?", "pages": [48,49]},
+    {"question": "What happens if I lose my key?", "pages": [1,45]},
+    {"question": "How many houses are there?", "pages": []}
 ]
