@@ -9,4 +9,5 @@
 
 
 ## Baseline (400-word chunks, no overlap, k=3)
-recall@3: 3/3 = 100% on 3 answerable questions (too few to trust)
+recall@3 (for the 10 questions): 3/3 = 100% on 3 answerable questions (too few to trust)
+recall@3: 8/10 = 80%
